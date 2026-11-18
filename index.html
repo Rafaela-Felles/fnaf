@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Freddy Fazbear's Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="inicio">
+        <div class="menu">
+            <h1>FREDDY FAZBEAR'S PIZZA</h1>
+
+            <p>
+                Explore a pizzaria.<br>
+                Descubra os cômodos.<br>
+                Encontre os animatrônicos.
+            </p>
+
+            <button onclick="iniciarJogo()">ENTRAR NA PIZZARIA</button>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <header>
+            <h1>🍕 Freddy Fazbear's Pizza</h1>
+            <p>Exploração livre</p>
+        </header>
+
+        <div id="areaJogo">
+            <canvas id="jogo" width="960" height="640"></canvas>
+        </div>
+
+        <div id="interface">
+            <div id="mensagem">Explore a pizzaria...</div>
+
+            <div id="controles">
+                WASD ou SETAS: andar | E: interagir
+            </div>
+        </div>
+
+    </div>
+
+    <div id="interacao" class="escondido">
+        <div id="caixaInteracao">
+            <h2 id="tituloInteracao"></h2>
+            <p id="textoInteracao"></p>
+
+            <button onclick="fecharInteracao()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
